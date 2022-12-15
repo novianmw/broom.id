@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>BROOM.ID | Rent a vehicle that you need</title>
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body>
+
+    <!-- HEADER | Untuk bagian Navigation [ONGOING untuk versi navbar hamburger]-->
+    <header class="w-full mx-auto p-5 shadow-lg rounded-lg">
+        <nav class="flex justify-between">
+            <div class="flex">
+                <a href="#">
+                    <i class="mr-3 fa-solid fa-car-side fa-2xl"></i><span class="text-2xl font-bold">Broom.id</span>
+                </a>
+            </div>
+            <div class="lg:flex hidden items-center">
+                <div class="mx-auto font-bold uppercase">
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">Rent</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">About</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">FAQ</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">Join Us</a>
+                </div>
+            </div>
+            <div class="hidden lg:flex font-bold text-white items-center">
+                <a href="#" class="text-sm mx-2 rounded-full py-2 px-6 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Login</a>
+                <a href="#" class="text-sm mx-2 rounded-full py-2 px-4 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Carousel Image | untuk menu berupa gambar [ONGOING buat beberapa gambar menu] -->
+    <section class="w-full mx-auto">
+        <div class="bg-white">
+            <img class="object-cover h-96 w-screen" src="Assets/Images/Header.jpg" alt="">
+            <div class="text-center mt-10">
+                <h1 class="text-black font-bold text-center lg:text-4xl sm:text-xl">Akses sewa kendaraan dengan berbagai mereka dan tipe</h1>
+            </div>
+        </div>
+    </section>
+
+<!-- Find Vehicle | untuk Cari kendaraan berdasarkan tipe dan brand  [DONE]-->
+    <section class="mx-20 border-slate-700 shadow-lg rounded-lg">
+        <div class="text-left px-14 py-10">
+            <h1 class="lg:text-2xl sm:text-lg text-black pb-3">Cari kendaraan</h1>
+            <form>   
+                <label for="default-search" class="m-10 text-sm font-medium text-gray-900 sr-only">Search</label>
+                <div class="relative flex">
+                    <div class="flex absolute inset-y-0 left-0 items-center px-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="search" id="default-search" class="block py-4 pl-12 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300" placeholder="Find your vehicle . . . " required>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white">
+            <div class="text-left px-14 py-1">
+                <h1 class="lg:text-2xl sm:text-lg text-black pb-3">Tipe Kendaraan</h1>
+                <div class="mb-4">
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 text-center">
+                        <div class="rounded bg-white">
+                            <button class=" hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                            <img class="rounded-lg" src="Assets/Images/sedans.png" alt="sedans">
+                            </button>
+                            <h3 class="mx-20">Sedan</h3>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class=" hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                            <img class="rounded-lg" src="Assets/Images/hatch.png" alt="Hatchback">
+                            </button>
+                         <h3 class="mx-20">Hatchback</h3>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class=" hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                            <img class="rounded-lg" src="Assets/Images/suvs.png" alt="SUV">
+                            </button>
+                            <h3 class="mx-20">SUV</h3>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class=" hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                            <img class="rounded-lg" src="Assets/Images/sportscars.png" alt="Sportcar">
+                            </button>
+                            <h3 class="mx-20">Sport</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-left px-14 py-1">
+                <h1 class="lg:text-2xl sm:text-lg text-black pb-3">Tipe Brand</h1>
+                <div class="mb-4">
+                    <div class="grid lg:grid-cols-8 sm:grid-cols-4 text-center">
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/toyota logo.avif" alt="Toyota Logo">
+                            </button>
+                            <div>
+                                <p>Toyota</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/honda logo.png" alt="Honda Logo">
+                            </button>
+                            <div>
+                                <p>Honda</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/Nissan Loogo.avif" alt="Nissan Logo">
+                            </button>
+                            <div>
+                                <p>Nissan</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/suzuki logo.png" alt="Suzuki Logo">
+                            </button>
+                            <div>
+                                <p>Suzuki</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/mitsuishi logo.avif" alt="Mitshubishi Logo">
+                            </button>
+                            <div>
+                                <p>Mitsubishi</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/daihatsu logo.avif" alt="Daihatsu Logo">
+                            </button>
+                            <div>
+                                <p>Daihatsu</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/hyundai logo.avif" alt="Hyundai Logo">
+                            </button>
+                            <div>
+                                <p>Hundai</p>
+                            </div>
+                        </div>
+                        <div class="rounded bg-white">
+                            <button class="hover:border-slate-200 hover:rounded hover:bg-slate-50 duration-300">
+                                <img class="rounded-lg" src="Assets/Images/chervrolet logo.avif" alt="Chevrolet Logo">
+                            </button>
+                            <div>
+                                <p>Chevrolet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- Best Vehicle | untuk rekomendasi kendaraan terbaik -->
+    <section class="w-full mx-auto">
+        <div class="text-center my-10">
+            <h1 class="text-black font-bold text-center lg:text-4xl sm:text-xl">Kendaraan terbaik kami</h1>
+        </div>
+        <div class="px-20 border-slate-700 bg-blue-800 shadow-lg rounded-lg py-10 mb-20">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/hanson-lu-MOHTDu-68no-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">BMW 530i 2021</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 mb-3">Makin Berkelas dan Sporty dengan kendaraan paling nyaman di kelasnya</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/Screenshot 2022-12-12 at 12.44.57.png" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">Volkswagen</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 mb-3">Nuansa Klasik dengan build quality tinggi</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/ryan-_Sb6m7sj0QU-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">Ford</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 mb-3">Gagah dan dapat menerjang di berbagai jalanan </p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/max-brinton-kU2MOjKobNg-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">Lamburghini Huracan</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 mb-3">Kendaraan Sport car yang terbaik di dunia</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Rewier | untuk list review  -->
+    <section class="w-full mx-auto">
+        <div class="text-center my-10">
+            <h1 class="text-black font-bold text-center lg:text-4xl sm:text-xl">Testimonial dari Pelanggan kami</h1>
+        </div>
+        <div class="px-20 boorder-slate-700 bg-white shadow-lg rounded-lg p-10 m-20">
+            <div class="grid grid-cols-1">
+                <div class="flex">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mb-10">
+                    <h1 class="text-black font-bold lg:text-4xl sm:text-xl">Banyak diskon</h1>
+                    <h2 class="font-bold">Ririn</h2>
+                    <h2>2019 Mitsubishi XPANDER ULTIMATE 1.5 Automatic</h2>
+                    <hr class="mt-5">
+                </div>
+                <div class="flex">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mb-10">
+                    <h1 class="text-black font-bold lg:text-4xl sm:text-xl"> Sales person sangat profesional, dan semua informasi tentang mobil tersedia</h1>
+                    <h2 class="font-bold">Saptono</h2>
+                    <h2>2019 Honda HR-V E PLUS 1.5 Automatic</h2>
+                    <hr class="mt-5">
+                </div>
+                <div class="flex">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="mb-10">
+                    <h1 class="text-black font-bold lg:text-4xl sm:text-xl"> Kualitas unit sangat baik</h1>
+                    <h2 class="font-bold">Arie</h2>
+                    <h2>2019 Honda BRIO SATYA E 1.2 Automatic</h2>
+                    <hr class="mt-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Footer | untuk menu footer [pengenalan, link web, dll] -->
+    <section class="w-full mx-auto bg-blue-900 text-slate-300">
+        <div class="max-w-full mx-auto p-6">
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:flex">
+                <div class="px-5">
+                    <a href="#">
+                        <i class="mr-3 fa-solid fa-car-side fa-2xl"></i><span class="text-2xl font-bold">Broom.id</span>
+                    </a>
+                    <ul>
+                        <li class="max-w-sm py-2 text-sm text-justify">Broom.id merupakan layanan sewa kendaraan berbasis e-commerce untuk kemudahan memilih kendaraaan yang diinginkan. tersedia di Pulau Jawa dan Bali</li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-5">
+                    <h3 class="font-bold">Berlangganan Newsletter Kami</h3>
+                        <p class="pb-5">Dapatkan diskon terbaru, promosi & keuntungan eksklusif yang dikirimkan langsung ke email Anda.</p>
+                    <form>   
+                        <label for="default-search" class="m-10 text-sm font-medium text-gray-900 sr-only">Search</label>
+                        <div class="relative flex lg:w-3/4 md:w-1/2 sm:w-full">
+                            <input type="search" id="default-search" class="block py-4 pl-4 w-full text-sm text-gray-900 bg-gray-100 rounded border border-gray-300" placeholder="Alamat Email" required>
+                            <button type="submit" class="text-sm -ml-1 rounded px-6 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Submit</button>
+                        </div>
+                    </form>
+                    <div class="grid grid-cols-1 gap-5 lg:col-span-2 lg:grid-cols-4 sm:grid-cols-2 pt-5">
+                        <div>
+                            <p class="font-medium">Layanan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Sewa Mobil </a>
+                                <a class="hover:opacity-75" href> Sewa Motor </a>
+                                <a class="hover:opacity-75" href> Menjadi Mitra </a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Bantuan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> FAQ </a>
+                                <a class="hover:opacity-75" href> Hubungi Kami </a>
+                                <a class="hover:opacity-75" href> Lokasi Kami </a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Tentang</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Tentang Kami </a>
+                                <a class="hover:opacity-75" href> Ulasan Kendaraan</a>
+                                <a class="hover:opacity-75" href> Artikel</a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Mitra Pelayanan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Traveloka </a>
+                                <a class="hover:opacity-75" href> Tiket.com</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-full p-4 mx-auto text-slate-300">
+                <p class="text-xs">Unduh Aplikasinya</p>
+            </div>
+            <div class="px-4 pb-4 flex text-left">
+                <div class="flex gap-5">
+                    <a href="#">
+                        <img class="w-32" src="Assets/Images/App store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img class="w-32" src="Assets/Images/Google Play.png" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+            <div class="py-2 border-t border-t-gray-600 text-gray-500 text-center">
+                <p>© 2022 PT Sarana Broom Indonesia Dilindungi oleh hak cipta.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
