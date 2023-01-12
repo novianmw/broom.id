@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>BROOM.ID | Rent a vehicle that you need</title>
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/all.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+</head>
+<body>
+<!-- Informasi seputar Website Simulasi -->
+    <section class="text-center font-bold">
+        <div class="border bg-green-500 p-4">
+            <p>Catatan : Website ini adalah Prototipe atau simulasi kerja dari web tersebut.</p>
+        </div>
+    </section>
+<!-- HEADER | Untuk bagian Navigation [ONGOING untuk versi navbar hamburger]-->
+     <header class="w-full mx-auto p-5 shadow-lg rounded-lg">
+        <nav class="flex justify-between">
+            <div class="flex">
+                <a href="index.html">
+                    <i class="mr-3 fa-solid fa-car-side fa-2xl"></i><span class="text-2xl font-bold">Broom.id</span>
+                </a>
+            </div>
+            <div class="lg:flex hidden items-center">
+                <div class="mx-auto font-bold uppercase">
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="rent.html">Rent</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="tentang-kami.html">About</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">FAQ</a>
+                    <a class="py-2 px-5 text-lg mr-8 text-black hover:border-slate-200 hover:rounded-full hover:bg-slate-200 duration-300" href="">Join Us</a>
+                </div>
+            </div>
+            <div class="hidden lg:flex font-bold text-white items-center">
+                <a href="#" class="text-sm mx-2 rounded-full py-2 px-6 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Login</a>
+                <a href="#" class="text-sm mx-2 rounded-full py-2 px-4 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+<!-- Find Vehicle | untuk Cari kendaraan berdasarkan tipe dan brand  [DONE] -->
+    <section class="w-full text-center border border-slate-300">
+        <div class="text-left px-14 py-5">
+            <h1 class="lg:text-2xl sm:text-lg text-black pb-3">Cari kendaraan</h1>
+            <form>   
+                <label for="default-search" class="m-10 text-sm font-medium text-gray-900 sr-only">Search</label>
+                <div class="relative flex">
+                    <div class="flex absolute inset-y-0 left-0 items-center px-3 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="search" id="default-search" class="block py-4 pl-12 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300" placeholder="Find your vehicle . . . " required>
+                </div>
+                <div class="flex my-3">
+                    <div class="flex items-center">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Merek & Model
+                        </button>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Tipe
+                        </button>
+                    </div>
+                    <div class="flex items-center">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Tahun
+                        </button>
+                    </div>
+                    <div class="md:flex hidden items-center ">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Warna
+                        </button>
+                    </div>
+                    <div class="md:flex hidden items-center ">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Transmisi
+                        </button>
+                    </div>
+                    <div class="md:flex hidden items-center ">
+                        <button class="text-sm mx-2 rounded-lg py-2 px-6 border border-black hover:text-blue-300 hover:border-blue-300">
+                            Harga
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+<!-- List Vehicle -->
+    <section class="w-full text-center border border-slate-300">
+        <div class="px-20 py-10 bg-slate-50">
+            <div class="text-left grid md:grid-cols-3 sm:grid-cols-2 gap-4">
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/hanson-lu-MOHTDu-68no-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">BMW 530i 2021</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 11.570 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 2.500.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 6.500.000 / 3 Hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/ryan-_Sb6m7sj0QU-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Ford</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 26.134 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 3.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 8.500.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/max-brinton-kU2MOjKobNg-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Lamburghini Huracan</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 2.176 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 85.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 200.000.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/hanson-lu-MOHTDu-68no-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">BMW 530i 2021</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 11.570 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 2.500.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 6.500.000 / 3 Hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/ryan-_Sb6m7sj0QU-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Ford</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 26.134 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 3.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 8.500.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/max-brinton-kU2MOjKobNg-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Lamburghini Huracan</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 2.176 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 85.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 200.000.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/hanson-lu-MOHTDu-68no-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-gray-900 font-bold text-2xl mb-2">BMW 530i 2021</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 11.570 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 2.500.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 6.500.000 / 3 Hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/ryan-_Sb6m7sj0QU-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Ford</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 26.134 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 3.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 8.500.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                    <a href="#">
+                        <img class="rounded-lg" src="Assets/Images/max-brinton-kU2MOjKobNg-unsplash.jpg" alt="">
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class=" text-gray-900 font-bold text-2xl mb-2">Lamburghini Huracan</h5>
+                        </a>
+                        <p class="font-normal text-lg text-gray-700 mb-3">KM 2.176 | Automatic | Jakarta Pusat</p>
+                        <p class="font-bold text-gray-700 mb-3">IDR 85.000.000</p>
+                        <p class="font-normal text-gray-700 mb-3">IDR 200.000.000 / 3 hari</p>
+                        <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                            Lihat Detail
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer | untuk menu footer [pengenalan, link web, dll] -->
+    <section class="w-full mx-auto bg-blue-900 text-slate-300">
+        <div class="max-w-full mx-auto p-6">
+            <div class="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:flex">
+                <div class="px-5">
+                    <a href="#">
+                        <i class="mr-3 fa-solid fa-car-side fa-2xl"></i><span class="text-2xl font-bold">Broom.id</span>
+                    </a>
+                    <ul>
+                        <li class="max-w-sm py-2 text-sm text-justify">Broom.id merupakan layanan sewa kendaraan berbasis e-commerce untuk kemudahan memilih kendaraaan yang diinginkan. tersedia di Pulau Jawa dan Bali</li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="inline px-2">
+                            <a href="#">
+                                <i class="fa-2x fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-5">
+                    <h3 class="font-bold">Berlangganan Newsletter Kami</h3>
+                        <p class="pb-5">Dapatkan diskon terbaru, promosi & keuntungan eksklusif yang dikirimkan langsung ke email Anda.</p>
+                    <form>   
+                        <label for="default-search" class="m-10 text-sm font-medium text-gray-900 sr-only">Search</label>
+                        <div class="relative flex lg:w-3/4 md:w-1/2 sm:w-full">
+                            <input type="search" id="default-search" class="block py-4 pl-4 w-full text-sm text-gray-900 bg-gray-100 rounded border border-gray-300" placeholder="Alamat Email" required>
+                            <button type="submit" class="text-sm -ml-1 rounded px-6 border border-black bg-black lg:mt-0 hover:text-white hover:bg-slate-600 duration-300">Submit</button>
+                        </div>
+                    </form>
+                    <div class="grid grid-cols-1 gap-5 lg:col-span-2 lg:grid-cols-4 sm:grid-cols-2 pt-5">
+                        <div>
+                            <p class="font-medium">Layanan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Sewa Mobil </a>
+                                <a class="hover:opacity-75" href> Sewa Motor </a>
+                                <a class="hover:opacity-75" href> Menjadi Mitra </a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Bantuan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> FAQ </a>
+                                <a class="hover:opacity-75" href> Hubungi Kami </a>
+                                <a class="hover:opacity-75" href> Lokasi Kami </a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Tentang</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Tentang Kami </a>
+                                <a class="hover:opacity-75" href> Ulasan Kendaraan</a>
+                                <a class="hover:opacity-75" href> Artikel</a>
+                            </nav>
+                        </div>
+                        <div>
+                            <p class="font-medium">Mitra Pelayanan</p>
+                            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                                <a class="hover:opacity-75" href> Traveloka </a>
+                                <a class="hover:opacity-75" href> Tiket.com</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-full p-4 mx-auto text-slate-300">
+                <p class="text-xs">Unduh Aplikasinya</p>
+            </div>
+            <div class="px-4 pb-4 flex text-left">
+                <div class="flex gap-5">
+                    <a href="#">
+                        <img class="w-32" src="Assets/Images/App store.png" alt="App Store">
+                    </a>
+                    <a href="#">
+                        <img class="w-32" src="Assets/Images/Google Play.png" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+            <div class="py-2 border-t border-t-gray-600 text-gray-500 text-center">
+                <p>© 2022 PT Sarana Broom Indonesia Dilindungi oleh hak cipta.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
